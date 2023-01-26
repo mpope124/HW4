@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-
-    document.getElementById("button1").addEventListener("click", function () {
-
-        document.getElementById("textbox1").value = "success";
-    });
 });
-
+    let workout = {
+       which: "",
+       length: "", //The professor adds the length in his video. We may not need this one.
+       calories: "",  
+    };

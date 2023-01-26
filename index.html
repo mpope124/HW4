@@ -3,20 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <title>starter code</title>
+    <title>Calorie Calculator</title>
 <link rel="stylesheet" type="text/css" href="site.css">
 </head>
 
 <body>
-<h2>This is the starter project</h2>
-
-<button type="button" id="button1">Add these numbers please</button>
+<h2>ITS TIME TO BURN SOME CALORIES BABY!</h2>
 <div>
+    <input type="radio" val="sitUp" id="sitUp">Sit Up</input>
     <br />
-    <input type="text" val="starting value" text="hello" id="textbox1" />
+    <input type="radio" val="pushUp" id="pushUp">Push Ups</input>
     <br />
+    <input type="radio" val="jumpRope" id="jumpRope" Jump Rope>Jump Rope</input>
 </div>
+<p>How many minutes?</p>
+<input type="number" val="minutes" id="minutes" />
+<br />
+<button type="button" id="addButton">add</button>
+<br />
+<br />
+<button type="button" id="mostBurned">Most Burned</button>
+<br />
+<input type="text" id="outputMostBurned" />
+<br />
+<br />
+<br />
+<button type="button" id="showAll">Show All</button>
+<div id="outputAll">
 
+</div>
 <script src="main.js"></script>
 </body>
 
