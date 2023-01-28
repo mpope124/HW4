@@ -1,7 +1,7 @@
 let Exercise = function(pWhich, pLength, pCalories){
    this.which = pWhich;
    this.length = pLength;
-   this.calories = pCalories;
+   this.calories = parseInt(pCalories);
    this.work1 = function() {
       return "Which: " + this.which + " Length: " + this.length + " Calories: " + this.calories
    };
@@ -34,15 +34,19 @@ function Workout() {
 document.getElementById('mostBurned').addEventListener('click', mostBurned);
 
 function mostBurned() {
-    let winner = 0
-    for (i = 0; i < workArr.length; i++) {
-    if  (workArr[i].calories > workArr[winner].calories);
-    {
-        winner = i;
-    }
-    }
+   let winner = 0;
+   for (i = 0; i < workArr.length; i++) {
+
+       if ( workArr[i].calories > workArr[winner].calories)
+       {
+           winner = i;
+       }
+   }
+   console.log(workArr[winner].calories);
+   
     document.getElementById("outputMostBurned").value = workArr[winner].which + ' ' + workArr[winner].calories;
 }
+
 document.addEventListener("DOMContentLoaded", function (event) {
 });
 
